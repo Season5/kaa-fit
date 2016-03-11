@@ -12,4 +12,9 @@
     tools:context="com.example.entsfrank.kaa_fit.Main2Activity"
     tools:showIn="@layout/app_bar_main2">
 
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
 </RelativeLayout>

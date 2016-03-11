@@ -43,7 +43,7 @@ public class MainIntro  extends AppIntro {
     }
 
     private void loadMainActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Main2Activity.class);
         startActivity(intent);
     }
 
