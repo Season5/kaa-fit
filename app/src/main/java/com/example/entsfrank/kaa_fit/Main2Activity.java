@@ -14,8 +14,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import frag.friday;
 import frag.main_home;
+import frag.monday;
+import frag.sato;
 import frag.sundayy;
+import frag.thursday;
+import frag.tuesday;
+import frag.wednesday;
 
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -87,17 +93,26 @@ public class Main2Activity extends AppCompatActivity
         FragmentManager fn = getFragmentManager();
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.sun) {
             fn.beginTransaction().replace(R.id.frame, new sundayy()).commit();
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.mon) {
+            fn.beginTransaction().replace(R.id.frame, new monday()).commit();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.tue) {
+            fn.beginTransaction().replace(R.id.frame, new tuesday()).commit();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.wed) {
+            fn.beginTransaction().replace(R.id.frame, new wednesday()).commit();
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.thur) {
+            fn.beginTransaction().replace(R.id.frame, new thursday()).commit();
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.fri) {
+            fn.beginTransaction().replace(R.id.frame, new friday()).commit();
+
+        }
+        else if (id == R.id.sato) {
+            fn.beginTransaction().replace(R.id.frame, new sato()).commit();
 
         }
 
